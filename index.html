@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロジカルシンキングチャレンジ！✨</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fontsを追加してポップなフォントを使用 -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>ロジカルシンキングチャレンジ！<span class="emoji">🧠💡</span></h1>
+
+        <!-- スタート画面 -->
+        <div id="start-screen" class="start-screen">
+            <p>10問のロジカルシンキング問題に挑戦しよう！</p>
+            <button id="start-button" class="button primary-button">ゲームスタート！🚀</button>
+        </div>
+
+        <!-- クイズ画面 -->
+        <div id="quiz-card" class="quiz-card hidden">
+            <p id="question-number" class="question-number"></p>
+            <div id="image-container" class="image-container"></div>
+            <p id="question-text" class="question-text"></p>
+
+            <div id="choices-container" class="choices-container">
+                <!-- 4択ボタンがここに追加されます -->
+            </div>
+            
+            <div id="hint-area" class="hint-area">
+                <button id="show-hint-button" class="button hint-button">ヒントを見る？🤔</button>
+                <p id="hint-text" class="hint-text hidden"></p>
+            </div>
+            <p id="feedback" class="feedback"></p>
+            <button id="next-question-button" class="button next-button hidden">次の問題へ！🚀</button>
+        </div>
+
+        <!-- 結果画面 -->
+        <div id="result-area" class="result-area hidden">
+            <h2>チャレンジ結果！🎉</h2>
+            <p id="correct-count" class="result-text"></p>
+            <p id="treasure-hint" class="treasure-hint hidden"></p>
+            <button id="reset-button" class="button primary-button">もう一度チャレンジ！🔄</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
