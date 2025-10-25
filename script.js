@@ -239,7 +239,7 @@ function showFinalResult() {
 
     // 取得した問題数と正解数が同じ場合にヒントを表示
     if (correctAnswersCount === currentQuestions.length && currentQuestions.length > 0) {
-        treasureHintElement.textContent = "🏆 おめでとう！宝のありかのヒントは「バク」だよ！";
+        treasureHintElement.textContent = "🏆 おめでとう！宝のありかのヒントは「タオ」だよ！";
         treasureHintElement.classList.remove('hidden');
     } else {
         treasureHintElement.classList.add('hidden');
